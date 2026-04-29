@@ -1,74 +1,68 @@
 # Code-Generation-and-Debugging-Assistant
 
-## Project Title
-Code Generation and Debugging Assistant
-
-## How to use this template
-This README shows my particular understanding of the problem and how I am approaching it.
+## Project Overview
+This project is about understanding why debugging takes so much time and how we can make it easier. While working with code, I noticed that the real problem is not just writing code, but understanding and fixing errors. So the idea is to make debugging simpler and more helpful for learning.
 
 ## Problem Statement
-Debugging is generally more time-consuming than programming itself. It is often hard to decipher the error messages, and this leads to difficulties with debugging. It is especially difficult for beginners, but even professionals may have problems with it due to the complexity of their code.
+Debugging takes more time than writing code because error messages are confusing and tools don’t clearly explain how to fix them. Because of this, beginners and even experienced developers sometimes get stuck.
 
 ## My Understanding of the Problem
+From what I observed, the main issue is that error messages are not easy to understand, and users don’t get proper guidance to fix them.
 
-Key issues identified:
-1. Time-wasting debugging process
-2. Inability to understand error messages
+## Main issues:
+Debugging takes a lot of time
+Error messages are confusing
+It is hard to find the exact mistake
+Tools give answers but not a proper explanation
 
-Why this problem exists?
-1. Tools identify errors but do not clarify what is wrong
-2. Beginners have difficulty in solving issues and understanding their meaning
+## Why does this problem happens?
+Tools are mainly built to detect errors, not explain them
+Users are not guided step by step while fixing issues
+Most people try random fixes instead of understanding the error
 
-Your assumptions:
-1.  Quick solution needed
-2.  Explanation facilitates understanding
+## Research on Existing Tools
+GitHub Copilot helps in writing code faster
+ChatGPT helps in giving solutions and explanations
 
-## Research on Existing Solutions
+But still:
 
-Existing solutions or tools :         
-1. GitHub Copilot: a useful tool for quick coding.
-2. ChatGPT can quickly suggest code and fixes, but the answers aren’t always perfect, so you still need to double-check them.
+Explanations are not always simple
+Users need to verify everything manually
+There is no proper step-by-step debugging flow
 
-Observations:
-1. Tools provide assistance but may require additional actions
-2. Users need to select the suitable solution manually
+## What is missing :
+Right now, tools either help in writing code or fixing errors. But there is no proper system that does both and also explains things in a simple way so users can actually learn.
 
-Limitations identified:
-1. Lack of explanation for errors
-2. No debugging instructions provided
+## My Idea:
+I want to build an assistant that can generate code, find errors, and explain them in a simple way so that users understand what went wrong and how to fix it.
 
-## My Identified Gap (Novelty) 
-What is missing in current solutions? 
-The problem lies in the fact that currently, tools perform either code generation or offer solutions but not vice versa.
+## How I am thinking to solve it:
+Generate code and detect errors
+Show simple explanation of the error
+Suggest easy fixes
+Help users understand instead of just giving answers
 
-My Idea
-Create an assistant that would be able to both create code and automatically detect errors, as well as provide explanations and suggestions to fix them.
+## Features I am thinking about
+Code generation
+Error detection
+Simple error explanations
+Fix suggestions
+Learning support while debugging
 
-My Proposed Approach
-How you propose to solve the problem: 
-Designing an automated system of code generation with error detection features.
+## What I learned
+Debugging is often harder than coding itself
+Most problems happen because we don’t understand the error properly
+Clear explanation can make a big difference
+Many people depend on trial and error while fixing bugs
 
-Possible features:
-1. Code generation
-2. Automatic detection of errors
-3. Automatic solutions
+## Next Steps
+Study more real coding errors
+Improve my idea based on feedback
+Check if this idea is actually possible to build
+Learn more about how debugging tools work.
 
-## Challenges and open Questions
+## Final Note
+This is just the starting point of my idea. I want to slowly improve it so that debugging becomes easier and more understandable, especially for beginners like me.
 
-1. Support for different languages
-2. Finding proper level of simplification
 
-## What I Learned
 
-1. Debugging is time-consuming and challenging
-2. There is lots of good software out there
-3. It is important to understand errors
-
-## Next Steps(My plan)
-1. Conduct more research
-2. Collect information from users
-3. Rethink my solution
-4. Check feasibility
-
-## Final note
-This is only the first step in developing my idea which will continue to grow and develop with research.
