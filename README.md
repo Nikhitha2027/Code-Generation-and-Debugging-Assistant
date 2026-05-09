@@ -183,10 +183,10 @@ The proposed framework offers a smarter, faster, and more user-friendly approach
 
 
 
-# References
+# REFERENCES
 
-1. Y. Majdoub and E. Ben Charrada, “Debugging with Open-Source Large Language Models: An Evaluation,” ESEM 2024.
+1. [Debugging with Open-Source Large Language Models: An Evaluation](https://dl.acm.org/doi/10.1145/3691620.3695518)
 
-2. O. Kurniawan et al., “Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool,” Koli Calling 2025.
+2. [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://dl.acm.org/doi/10.1145/3702438.3702445)
 
-3. Y. N. Khartode et al., “AI-Assisted Debugging: The Future of Automated Code Fixing,” IJARSCT 2025.
+3. [AI-Assisted Debugging: The Future of Automated Code Fixing](https://ijarsct.co.in/PaperAI-Assisted-Debugging)
