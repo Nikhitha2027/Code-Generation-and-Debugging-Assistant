@@ -66,27 +66,27 @@ The goal of our system is to decrease the time and effort required to debug, inc
 
 # IV. Methodology
 
-## A. Code Input
+## 1. Code Input
 
 The user writes, uploads, or pastes source code into the system for debugging and analysis.
 
-## B. Code Analysis
+## 2. Code Analysis
 
 The system analyzes the code to identify syntax errors, logical mistakes, runtime errors, and semantic issues.
 
-## C. Fault Detection
+## 3. Fault Detection
 
 Fault localization techniques are used to identify suspicious lines and possible error locations in the program.
 
-## D. AI-Based Debugging
+## 4. AI-Based Debugging
 
 Large Language Models such as GPT-4, DeepSeek-Coder, and CodeLlama analyze the code and generate possible fixes and debugging suggestions.
 
-## E. Patch Validation
+## 5. Patch Validation
 
 The generated fixes are validated using automated testing and static analysis to check whether the solution works correctly.
 
-## F. Interactive Guidance
+## 6. Interactive Guidance
 
 The system provides debugging explanations, hints, and step-by-step guidance to help users understand the errors and solutions.
 
