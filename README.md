@@ -1,3 +1,13 @@
+<p align="left">
+  <img src="./era_foundation_logo.jpg" width="140" align="left"/>
+</p>
+<p align="right">
+  <img src="./comed_kares_logo.jpg" width="320" align="right"/>
+</p>
+
+<br><br><br>
+
+
 # Code Generation and Debugging Assistant Using DeepLearning and Large Language Models
 
 ## Abstract
