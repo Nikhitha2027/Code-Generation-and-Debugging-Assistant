@@ -66,32 +66,19 @@ The goal of our system is to decrease the time and effort required to debug, inc
 
 # IV. Methodology
 
-## 1. Code Input
+* The user writes, uploads, or pastes source code into the system for debugging and analysis.
 
-The user writes, uploads, or pastes source code into the system for debugging and analysis.
+* The system analyzes the code to identify syntax errors, logical mistakes, runtime errors, and semantic issues.
 
-## 2. Code Analysis
+* Fault localization techniques are used to identify suspicious lines and possible error locations in the program.
 
-The system analyzes the code to identify syntax errors, logical mistakes, runtime errors, and semantic issues.
+* Large Language Models such as GPT-4, DeepSeek-Coder, and CodeLlama analyze the code and generate possible fixes and debugging suggestions.
 
-## 3. Fault Detection
+* The generated fixes are validated using automated testing and static analysis to check whether the solution works correctly.
 
-Fault localization techniques are used to identify suspicious lines and possible error locations in the program.
+* The system provides debugging explanations, hints, and step-by-step guidance to help users understand the errors and solutions.
 
-## 4. AI-Based Debugging
-
-Large Language Models such as GPT-4, DeepSeek-Coder, and CodeLlama analyze the code and generate possible fixes and debugging suggestions.
-
-## 5. Patch Validation
-
-The generated fixes are validated using automated testing and static analysis to check whether the solution works correctly.
-
-## 6. Interactive Guidance
-
-The system provides debugging explanations, hints, and step-by-step guidance to help users understand the errors and solutions.
-
-
-
+  
 # V. New Features of the Proposed System
 
 The proposed system includes several improved features that are not fully available in the existing research papers.
@@ -184,20 +171,15 @@ The proposed framework offers a smarter, faster, and more user-friendly approach
 
 
 # Comparative Analysis of Existing Systems
-| Feature               | Debugging with Open-Source LLMs        | Designing for Novice Debuggers | AI-Assisted Debugging       |
-| --------------------- | -------------------------------------- | ------------------------------ | --------------------------- |
-| Main Focus            | Open-source LLM evaluation             | Beginner-friendly debugging    | Automated code fixing       |
-| AI Model Support      | DeepSeek-Coder, CodeLlama, WizardCoder | GPT-4o                         | Large Language Models       |
-| Interactive Debugging | No                                     | Yes                            | Partial                     |
-| Explainable Debugging | No                                     | Yes                            | Limited                     |
-| Beginner Support      | No                                     | Yes                            | No                          |
-| Fault Localization    | No                                     | Yes                            | Partial                     |
-| Semantic Analysis     | Limited                                | Moderate                       | Moderate                    |
-| Multi-file Debugging  | No                                     | No                             | No                          |
-| Patch Validation      | Yes                                    | No                             | Partial                     |
-| IDE Support           | No                                     | VS Code                        | Partial                     |
-| Real-time Debugging   | No                                     | Partial                        | Yes                         |
-| Main Limitation       | No explainability                      | Limited language support       | No practical implementation |
+
+| Feature | Open-Source LLMs | Novice Debuggers Tool | AI-Assisted Debugging |
+|----------|------------------|-----------------------|----------------------|
+| Main Focus | LLM evaluation | Beginner debugging | Automated fixing |
+| AI Model Support | DeepSeek-Coder, CodeLlama | GPT-4o | Large Language Models |
+| Explainable Debugging | No | Yes | Limited |
+| Fault Localization | No | Yes | Partial |
+| Multi-file Debugging | No | No | No |
+| Main Limitation | No explainability | Limited language support | No practical implementation |
 
 
 
