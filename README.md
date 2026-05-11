@@ -251,6 +251,35 @@ The system allows users to upload or write code, analyze errors, detect bugs, ge
 
 ## 7.2 System Architecture
 
+## System Architecture
+
+
+User Input
+    ↓
+Frontend Interface
+    ↓
+Preprocessing Module
+    ↓
+Deep Learning Model
+    ↓
+Large Language Model
+    ↓
+Code Generation
+    ↓
+Bug Detection
+    ↓
+Error Classification
+    ↓
+Code Analysis & Validation
+    ↓
+Suggested Fix / Corrected Code
+    ↓
+Output Interface
+    ↓
+User Feedback
+    ↓
+Continuous Learning & Dataset Update
+
 
 
 ## 7.3 Data Flow
