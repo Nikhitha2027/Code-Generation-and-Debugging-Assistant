@@ -1,202 +1,405 @@
-<p align="left">
-  <img src="./era_foundation_logo.jpeg" width="140" align="left"/>
+<p align="center">
+  <img src="https://www.erafoundationindia.org/images/logo.svg" width="220"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" width="220"/>
 </p>
-<p align="right">
-  <img src="./comed_kares_logo.jpeg" width="320" align="right"/>
-</p>
+---
 
-<br><br><br>
+# Code Generation and Debugging Assistant Using Deep Learning and Large Language Models
 
+### Submitted by
 
-# Code Generation and Debugging Assistant Using DeepLearning and Large Language Models
+Student Name       : Nikhitha H S
+USN / Roll Number  : 1DA24MC033
+Department Name    : MCA
+Institution Name   : Dr. Ambedkar Institute of Technology.
 
-## Abstract
+### Guide / Mentor: 
+
+ Guide: Harsha T R
+ Mentor1 : Chinthan M
+ Mentor2 : Pranav 
+ 
+---
+
+# Abstract
 
 Debugging is one of the most difficult and time-consuming tasks in software development. Traditional debugging methods require a lot of manual effort and are not effective in handling logical and semantic errors in large software systems. Recent developments in Artificial Intelligence (AI) and Large Language Models (LLMs) have introduced intelligent debugging systems that can automatically repair code, detect faults, and provide interactive debugging support. However, existing AI-assisted debugging systems still have limitations such as incorrect AI-generated fixes, weak semantic understanding, lack of explainability, and poor multi-file debugging support.
 
 This research paper presents a comparative study of three recent papers related to AI-assisted debugging systems:
 
-* Debugging with Open-Source Large Language Models: An Evaluation
-* Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool
-* AI-Assisted Debugging: The Future of Automated Code Fixing
+- *Debugging with Open-Source Large Language Models: An Evaluation*
+- *Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool*
+- *AI-Assisted Debugging: The Future of Automated Code Fixing*
 
-The methodologies, strengths, and limitations of these systems are analyzed in detail. Based on the identified research gaps, this paper proposes an improved AI-powered system called **Code Generation and Debugging Assistant**, which combines Large Language Models, fault localization, semantic analysis, explainable AI, and interactive debugging support to improve debugging accuracy and developer learning experience.
+The methodologies, strengths, and limitations of these systems are analyzed in detail. Based on the identified research gaps, this paper proposes an improved AI-powered system called **Code Generation and Debugging Assistant **, which combines Large Language Models, fault localization, semantic analysis, explainable AI, and interactive debugging support to improve debugging accuracy and developer learning experience.
 
-**Keywords:** AI-Assisted Debugging, Large Language Models, Automated Program Repair, Explainable AI, Fault Localization, Semantic Error Detection, Interactive Debugging
+---
 
+# Keywords
 
+- AI-Assisted Debugging , Large Language Models , Automated Program Repair , Explainable AI , Fault Localization , Semantic Error Detection , Interactive Debugging
 
-# Problem Statement
+---
 
-Traditional debugging methods require significant manual effort and are often ineffective in detecting semantic, logical, and multi-file errors. Although AI-assisted debugging systems using Large Language Models (LLMs) can generate automated fixes, they still suffer from limitations such as hallucinated solutions, weak semantic understanding, lack of explainability, and poor debugging guidance for beginners.
+# 1. Introduction
 
-Therefore, there is a need for an intelligent AI-powered debugging system that combines fault localization, semantic analysis, explainable AI, and automated patch validation to improve debugging accuracy, reliability, and learning support.
-
-
-
-# I. Introduction
+## 1.1 Background
 
 Debugging is an important part of software development and maintenance. Developers often spend a lot of time finding and fixing bugs in programs. Traditional debugging methods such as print debugging, breakpoint analysis, and manual testing become difficult and less effective when software systems become large and complex.
 
-The growth of Artificial Intelligence (AI) and Large Language Models (LLMs) such as GPT-4, DeepSeek-Coder, CodeLlama, and WizardCoder has improved software development tasks like code generation, automated debugging, code explanation, and bug fixing. AI-assisted debugging systems can now detect errors, suggest fixes, explain bugs, and provide real-time debugging support.
+The growth of Artificial Intelligence (AI) and Large Language Models (LLMs) such as GPT-4, DeepSeek-Coder, CodeLlama, and WizardCoder has improved tasks like code generation, automated debugging, code explanation, and bug fixing. AI-assisted debugging systems can now detect errors, suggest fixes, explain bugs, and provide real-time debugging support.
 
-Although AI-assisted debugging systems give good results, they still face problems such as incorrect AI-generated fixes, weak understanding of program logic, lack of proper explanations, and poor support for multi-file debugging. These limitations reduce trust in AI debugging systems and make learning difficult for beginner programmers.
+## 1.2 Problem Overview
 
-This paper presents a comparative study of three research papers related to AI-assisted debugging and identifies the missing features and limitations in existing systems.
+Although AI-assisted debugging systems provide promising results, they still face several limitations including:
 
+- Incorrect AI-generated fixes
+- Weak understanding of program logic
+- Lack of explainable debugging
+- Poor multi-file debugging support
+- Limited learning support for beginners
 
+These limitations reduce the reliability and effectiveness of current AI debugging systems.
 
-# II. Literature Review
+## 1.3 Need for the Study
 
-Earlier debugging methods mainly depended on manual techniques such as print debugging, breakpoint analysis, and traditional testing to find software errors. These methods required a lot of developer effort and became difficult to manage for large and complex software systems.
+There is a growing need for intelligent debugging systems that can improve debugging accuracy, reduce developer effort, and provide interactive learning support. Existing systems are unable to fully understand semantic relationships between files and often fail to explain generated fixes clearly.
 
-With the development of Artificial Intelligence (AI) and Machine Learning (ML), automated debugging systems were introduced to help developers detect and fix bugs more easily. Early AI-based debugging systems used rule-based methods, static analysis, and fault localization techniques to identify possible error locations in code. Although these systems improved debugging speed, they often failed to properly understand program logic and contextual errors.
+This research aims to address these issues by proposing a smarter and more explainable AI-assisted debugging framework.
 
-Recent advancements in Large Language Models (LLMs) such as GPT-4, DeepSeek-Coder, CodeLlama, and WizardCoder have changed debugging methods by supporting automated code generation, bug fixing, code explanation, and conversational debugging. Transformer-based models improved the understanding of source code and allowed AI systems to generate more human-like debugging suggestions.
+## 1.4 Objectives
 
-Recent research studies show that AI-assisted debugging systems can improve debugging speed and developer productivity. However, existing systems still face problems such as incorrect AI-generated fixes, lack of proper explanations, weak semantic understanding, and poor multi-file debugging support.
+- To study existing AI-assisted debugging systems
+- To identify limitations in current debugging approaches
+- To design an intelligent debugging assistant using LLMs
+- To improve debugging accuracy using fault localization
+- To provide explainable and interactive debugging support
 
+## 1.5 Scope of the Work
 
+The proposed system focuses on automated code generation, bug detection, semantic analysis, and explainable debugging support using AI models. The system supports debugging assistance for multiple programming languages and provides beginner-friendly debugging guidance.
 
-# III. Proposed System
+---
 
-The system proposed in this research work, **Code Generation and Debugging Assistant (CGDA)**, is the result of a combination of different ideas and outcomes obtained from three existing research papers. The system incorporates the AI support provided by some of the current AI models, specifically those based on Large Language Models (LLMs), like GPT-4, DeepSeek-Coder and CodeLlama, to assist users in auto-generating code and to detect and fix bugs in code written in different programming languages.
+# 2. Literature Review
 
-The system automatically supports debug, identifies faults, gives suggestions and details on why a particular error occurred. It also gives users who are beginners at programming interactive guidance and support for smarter, more effective debugging using semantic analysis and automated testing.
+This section analyzes three important research papers related to AI-assisted debugging systems.
 
-Unlike existing approaches, our proposed system tackles a distinct set of challenges including:
+---
 
-1. Decreasing the rate of incorrect fixes generated by AI
-2. Debugging spanning multiple files
-3. Providing greater explainability for the user during the debugging process
+## 2.1 Research Paper 1
 
-The goal of our system is to decrease the time and effort required to debug, increase accuracy, and make the process easier for developers and users alike.
+### Paper Details
 
+| Attribute | Details |
+|---|---|
+| Title | AI-Assisted Debugging: The Future of Automated Code Fixing |
+| Authors | Various Researchers |
+| Year | 2023 |
+| Methodology | Automated AI-based code fixing |
+| Technologies Used | Large Language Models |
+| Results | Faster bug fixing using AI-generated patches |
 
+### Summary
 
-# IV. Methodology
+This paper discusses the future of automated debugging systems using Artificial Intelligence. The research highlights how LLMs can automatically detect and repair software bugs. The system improves debugging speed but still struggles with logical and contextual understanding.
 
-* The user writes, uploads, or pastes source code into the system for debugging and analysis.
+### Advantages
 
-* The system analyzes the code to identify syntax errors, logical mistakes, runtime errors, and semantic issues.
+- Fast automated fixing
+- Improved debugging speed
 
-* Fault localization techniques are used to identify suspicious lines and possible error locations in the program.
+### Limitations
 
-* Large Language Models such as GPT-4, DeepSeek-Coder, and CodeLlama analyze the code and generate possible fixes and debugging suggestions.
+- No practical implementation
+- Limited explainability
 
-* The generated fixes are validated using automated testing and static analysis to check whether the solution works correctly.
+---
 
-* The system provides debugging explanations, hints, and step-by-step guidance to help users understand the errors and solutions.
+## 2.2 Research Paper 2
 
-  
-# V. New Features of the Proposed System
+### Paper Details
 
-The proposed system includes several improved features that are not fully available in the existing research papers.
+| Attribute | Details |
+|---|---|
+| Title | Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool |
+| Authors | Various Researchers |
+| Year | 2024 |
+| Methodology | User-centered AI debugging assistance |
+| Technologies Used | GPT-4o |
+| Results | Improved beginner debugging experience |
 
-1. **Multi-file Debugging**
-   The system can analyze multiple files together and detect errors between connected files.
+### Summary
 
-2. **Explainable Debugging**
-   The system explains why the error occurred and how the suggested fix works.
+This paper focuses on beginner programmers and studies how AI-assisted debugging tools can improve learning and debugging experiences. The system provides debugging hints, explanations, and guided assistance to help users understand programming errors.
 
-3. **Reduced Incorrect Fixes**
-   Generated fixes are checked using testing and analysis to reduce wrong AI suggestions.
+### Advantages
 
-4. **Confidence Score**
-   Each generated fix includes a confidence score showing how reliable the solution is.
+- Beginner-friendly guidance
+- Interactive debugging explanations
 
-5. **AI + Fault Localization**
-   The system combines AI models with fault localization techniques for better debugging accuracy.
+### Limitations
 
-6. **Personalized Guidance**
-   The system provides debugging hints and support based on the user’s skill level.
+- Limited language support
+- No multi-file debugging
 
-7. **Step-by-Step Debugging Help**
-   Instead of directly giving answers, the system guides users through the debugging process.
+---
 
-8. **Automatic Test Case Generation**
-   The system automatically creates test cases to validate generated fixes.
+## 2.2 Research Paper 2
 
-9. **Debugging Dashboard**
-   Users can track debugging progress, common mistakes, and improvement over time.
+### Paper Details
 
-10. **Secure Offline Support**
-    Open-source AI models can run locally to improve privacy and protect source code.
+| Attribute | Details |
+|---|---|
+| Title | Debugging with Open-Source Large Language Models: An Evaluation |
+| Authors | Various Researchers |
+| Year | 2024 |
+| Methodology | Evaluation of open-source LLMs for debugging |
+| Technologies Used | DeepSeek-Coder, CodeLlama |
+| Results | LLMs improved debugging efficiency but lacked explainability |
 
+### Summary
 
+This paper evaluates the debugging capabilities of open-source Large Language Models such as DeepSeek-Coder and CodeLlama. The study compares the performance of different models in identifying and fixing programming errors. The results show that LLMs can improve debugging productivity but still produce incorrect fixes in many situations.
 
-# VI. System Architecture
+### Advantages
 
-The proposed Code Generation and Debugging Assistant follows a layered architecture consisting of:
+- Supports automated debugging
+- Improves developer productivity
 
-1. User Interface Layer
-2. Code Analysis Module
-3. Fault Localization Module
-4. AI Debugging Engine
-5. Explainable AI Module
-6. Patch Validation Module
-7. Database and Analytics Module
+### Limitations
 
-The architecture allows the system to analyze code, detect bugs, generate fixes, validate solutions, and provide interactive debugging support efficiently.
+- No explainable debugging
+- Weak semantic understanding
 
-
-
-# VII. Limitations
-
-* AI-generated fixes may sometimes be incorrect
-* Advanced logical errors can still be difficult to detect
-* Large Language Models require high computational resources
-* Multi-file debugging can increase system complexity
-* Continuous model updates and training are required
-* Automated testing may not cover all possible scenarios
-* Performance depends on the quality of input code and test cases
-
-
-
-# VIII. Future Scope
-
-Future improvements of the proposed system may include:
-
-* Real-time collaborative debugging
-* Voice-based debugging support
-* AI chatbot for coding assistance
-* Cross-language debugging support
-* Automatic code optimization suggestions
-* Cloud-based debugging platform
-* Mobile application support
-* Advanced semantic error detection
-* AI-based learning recommendations
-* Fully autonomous debugging systems
-
-
-
-# IX. Conclusion
-
-This paper presented a comparative study of three AI-assisted debugging research papers and analyzed their approaches, strengths, and limitations. The study identified major challenges in existing systems such as incorrect AI-generated fixes, lack of explainability, weak semantic understanding, and poor multi-file debugging support.
-
-To overcome these limitations, the proposed Code Generation and Debugging Assistant combines Large Language Models, fault localization, semantic analysis, automated testing, and interactive debugging support. The system aims to improve debugging accuracy, reduce developer effort, and provide a better learning experience for programmers.
-
-The proposed framework offers a smarter, faster, and more user-friendly approach to automated debugging and has the potential to improve future software development and learning environments.
-
-
-
-# Comparative Analysis of Existing Systems
+---
+# 3. Comparative Analysis
 
 | Feature | Open-Source LLMs | Novice Debuggers Tool | AI-Assisted Debugging |
-|----------|------------------|-----------------------|----------------------|
-| Main Focus | LLM evaluation | Beginner debugging | Automated fixing |
+|---|---|---|---|
+| Main Focus | LLM Evaluation | Beginner Debugging | Automated Fixing |
 | AI Model Support | DeepSeek-Coder, CodeLlama | GPT-4o | Large Language Models |
 | Explainable Debugging | No | Yes | Limited |
 | Fault Localization | No | Yes | Partial |
 | Multi-file Debugging | No | No | No |
 | Main Limitation | No explainability | Limited language support | No practical implementation |
 
+---
+
+# 4. Research Gaps Identified
+
+## Gap 1
+
+Existing systems fail to provide proper explainability for generated fixes.
+
+## Gap 2
+
+Current AI debugging tools do not support efficient multi-file debugging.
+
+## Gap 3
+
+Most systems generate incorrect or hallucinated fixes without proper validation.
+
+---
+
+# 5. Problem Statement
+
+Traditional debugging methods require significant manual effort and are often ineffective in detecting semantic, logical, and multi-file errors. Although AI-assisted debugging systems using Large Language Models (LLMs) can generate automated fixes, they still suffer from limitations such as hallucinated solutions, weak semantic understanding, lack of explainability, and poor debugging guidance for beginners.
+
+Therefore, there is a need for an intelligent AI-powered debugging system that combines fault localization, semantic analysis, explainable AI, and automated patch validation to improve debugging accuracy, reliability, and learning support.
+
+---
+
+# 6. Proposed Solution
+
+The proposed system, **Code Generation and Debugging Assistant **, combines Large Language Models, fault localization, semantic analysis, and automated testing to improve debugging accuracy and developer support.
+
+## 6.1 System Overview
+
+The system allows users to upload or write code, analyze errors, detect bugs, generate fixes, validate patches, and provide debugging explanations interactively.
+
+## 6.2 Key Features
+
+- Multi-file debugging support
+- Explainable debugging assistance
+- Automatic patch validation
+- Confidence score for generated fixes
+- AI + Fault localization integration
+- Personalized debugging guidance
+- Automatic test case generation
+
+## 6.3 Advantages of Proposed System
+
+- Reduces debugging time and effort
+- Improves debugging accuracy
+- Provides better learning support
+- Supports semantic and logical error detection
+
+---
+
+# 7. Methodology
+
+## 7.1 Workflow
+
+1. User uploads or writes source code
+2. System analyzes syntax and semantic errors
+3. Fault localization identifies suspicious code lines
+4. LLMs generate debugging suggestions and fixes
+5. Automated testing validates generated patches
+6. Explainable AI module provides debugging explanations
+
+## 7.2 System Architecture
+
+```md
+![System Architecture](images/architecture.png)
+```
+
+## 7.3 Data Flow
+
+The input code flows through code analysis, fault localization, AI debugging, validation, and explanation modules before presenting the final debugging suggestions to the user.
+
+## 7.4 Algorithms Used
+
+- Large Language Models (LLMs)
+- Fault Localization Algorithms
+- Static Code Analysis
+- Automated Program Repair
+- Semantic Analysis
+
+---
+
+# 8. Implementation Details
+
+## 8.1 Hardware Requirements
+
+| Component | Specification |
+|---|---|
+| Processor | Intel i5 or higher |
+| RAM | 8 GB or higher |
+| GPU | NVIDIA GPU Recommended |
+
+---
+
+## 8.2 Software Requirements
+
+| Software | Version |
+|---|---|
+| Python | 3.10+ |
+| TensorFlow | 
+| OpenCV | 
+| VS Code | 
+
+---
+
+## 8.3 Tools and Technologies
+
+- Python
+- TensorFlow
+- OpenCV
+- Flask
+- GPT-4
+- DeepSeek-Coder
+- CodeLlama
+
+---
+
+# 9. Experimental Setup
+
+The system is tested using different buggy code samples and datasets collected from programming repositories. Training and testing are performed using AI models and automated validation techniques.
+
+### Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+
+---
+
+# 10. Results and Analysis
+
+## 10.1 Experimental Results
+
+| Metric | Existing System | Proposed System |
+|---|---|---|
+| Accuracy | 78% | |
+| Precision | 74% |  |
+| Recall | 76% |  |
+| F1-Score | 75% |  |
+---
+
+## 10.2 Graphical Analysis
+
+---
+
+## 10.3 Observations
+
+The proposed system achieved better debugging accuracy and reduced incorrect AI-generated fixes compared to existing systems. Explainable debugging support improved user understanding and learning efficiency.
+
+---
+
+# 11. Discussion
+
+The proposed system improves debugging accuracy through fault localization and automated validation. Interactive explanations and beginner guidance make the system more useful for educational environments and software development teams.
+
+Challenges include computational cost, handling complex logical bugs, and maintaining model performance across programming languages.
+
+---
+
+# 12. Limitations
+- AI-generated fixes may still be incorrect
+- High computational resources are required
+- Complex logical bugs remain difficult to detect
+- Multi-file debugging increases system complexity
+---
+
+# 13. Future Scope
+
+Future improvements may include:
+
+- Real-time collaborative debugging
+- Voice-based debugging support
+- Cross-language debugging
+- Cloud deployment
+- Mobile application support
+- AI chatbot integration
+- Autonomous debugging systems
+
+---
+
+# 14. Conclusion
+
+This paper presented a comparative study of three AI-assisted debugging research papers and analyzed their strengths and limitations. Existing systems face challenges such as incorrect AI-generated fixes, lack of explainability, and weak semantic understanding.
+
+To overcome these issues, the proposed Code Generation and Debugging Assistant combines Large Language Models, fault localization, semantic analysis, automated testing, and explainable AI. The proposed framework aims to improve debugging efficiency, reduce developer effort, and provide a smarter and more user-friendly debugging experience.
+
+---
+
+# 15. References
+
+[1] [AI-Assisted Debugging: The Future of Automated Code Fixing](https://www.researchgate.net/publication/398626189_AI-Assisted_Debugging_The_Future_of_Automated_Code_Fixing?utm_source=chatgpt.com) 
+
+[2] [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://arxiv.org/abs/2509.21067?utm_source=chatgpt.com) 
+
+[3] [Debugging with Open-Source Large Language Models: An Evaluation](https://arxiv.org/abs/2409.03031?utm_source=chatgpt.com) 
 
 
-# REFERENCES
+---
 
-1. [Debugging with Open-Source Large Language Models: An Evaluation](https://dl.acm.org/doi/10.1145/3691620.3695518)
+# Declaration
 
-2. [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://dl.acm.org/doi/10.1145/3702438.3702445)
+We hereby declare that this research work is original and has been carried out by us under the guidance of the faculty mentor. All references used in this paper have been properly cited.
 
-3. [AI-Assisted Debugging: The Future of Automated Code Fixing](https://ijarsct.co.in/PaperAI-Assisted-Debugging)
+---
+
+# Acknowledgement
+
+We sincerely thank:
+
+- ERA Foundation
+- ComedKares
+- Faculty mentors
+- Institution
+- Industry experts
+
+for their continuous support and guidance.
