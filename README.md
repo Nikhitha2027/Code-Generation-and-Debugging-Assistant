@@ -38,7 +38,7 @@ The methodologies, strengths, and limitations of these systems are analyzed in d
 
 # Keywords
 
-- AI-Assisted Debugging , Large Language Models , Automated Program Repair , Explainable AI , Fault Localization , Semantic Error Detection , Interactive Debugging
+AI-Assisted Debugging , Large Language Models , Automated Program Repair , Explainable AI , Fault Localization , Semantic Error Detection , Interactive Debugging
 
 ---
 
