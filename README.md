@@ -251,9 +251,7 @@ The system allows users to upload or write code, analyze errors, detect bugs, ge
 
 ## 7.2 System Architecture
 
-```md
-![System Architecture](images/architecture.png)
-```
+
 
 ## 7.3 Data Flow
 
