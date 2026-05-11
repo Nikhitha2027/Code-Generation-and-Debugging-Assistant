@@ -253,38 +253,18 @@ The system allows users to upload or write code, analyze errors, detect bugs, ge
 
 ## System Architecture
 
-
-User Input
-    ↓
-Frontend Interface
-    ↓
-Preprocessing Module
-    ↓
-Deep Learning Model
-    ↓
-Large Language Model
-    ↓
-Code Generation
-    ↓
-Bug Detection
-    ↓
-Error Classification
-    ↓
-Code Analysis & Validation
-    ↓
-Suggested Fix / Corrected Code
-    ↓
-Output Interface
-    ↓
-User Feedback
-    ↓
-Continuous Learning & Dataset Update
-
-
+User Input → Code Analyzer → Deep Learning Model → LLM Processing → Bug Detection → Code Suggestion & Fixing → Output Generation
 
 ## 7.3 Data Flow
 
-The input code flows through code analysis, fault localization, AI debugging, validation, and explanation modules before presenting the final debugging suggestions to the user.
+1. User provides the input source code to the system.  
+2. Code analysis module examines the syntax, structure, and logic of the program.  
+3. Fault localization module identifies possible errors in the code.  
+4. AI debugging module uses Deep Learning and LLMs to detect and fix bugs.  
+5. Validation module checks the accuracy and executability of generated fixes.  
+6. Explanation module generates clear descriptions of detected errors and solutions.  
+7. Final debugging suggestions and corrected code are displayed to the user.  
+
 
 ## 7.4 Algorithms Used
 
