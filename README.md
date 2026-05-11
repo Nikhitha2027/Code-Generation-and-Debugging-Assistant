@@ -382,12 +382,11 @@ To overcome these issues, the proposed Code Generation and Debugging Assistant c
 
 # 15. References
 
-[1] [AI-Assisted Debugging: The Future of Automated Code Fixing](https://www.researchgate.net/publication/398626189_AI-Assisted_Debugging_The_Future_of_Automated_Code_Fixing?utm_source=chatgpt.com) 
+[1] [AI-Assisted Debugging: The Future of Automated Code Fixing](https://www.ijarsct.co.in/Paper30420.pdf)
 
-[2] [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://arxiv.org/abs/2509.21067?utm_source=chatgpt.com) 
+[2] [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://arxiv.org/abs/2509.21067)
 
-[3] [Debugging with Open-Source Large Language Models: An Evaluation](https://arxiv.org/abs/2409.03031?utm_source=chatgpt.com) 
-
+[3] [Debugging with Open-Source Large Language Models: An Evaluation](https://arxiv.org/abs/2409.03031)
 
 ---
 
