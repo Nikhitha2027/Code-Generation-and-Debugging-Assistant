@@ -251,8 +251,6 @@ The system allows users to upload or write code, analyze errors, detect bugs, ge
 
 ## 7.2 System Architecture
 
-## System Architecture
-
 User Input → Code Analyzer → Deep Learning Model → LLM Processing → Bug Detection → Code Suggestion & Fixing → Output Generation
 
 ## 7.3 Data Flow
