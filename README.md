@@ -288,12 +288,12 @@ User Input → Code Analyzer → Deep Learning Model → LLM Processing → Bug 
 
 ## 8.2 Software Requirements
 
-| Software | Version |
-|---|---|
-| Python | 3.10+ |
-| TensorFlow | 
-| OpenCV | 
-| VS Code | 
+| Software   | Version |
+|------------|---------|
+| Python     | 3.10+   |
+| TensorFlow | 2.x     |
+| OpenCV     | 4.x     |
+| VS Code    | Latest  |
 
 ---
 
