@@ -358,6 +358,20 @@ User Input → Code Analyzer → Deep Learning Model → LLM Processing → Bug 
 
 The system is tested using different buggy code samples and datasets collected from programming repositories. Training and testing are performed using AI models and automated validation techniques.
 
+## Datasets Used
+
+The proposed system is trained and evaluated using publicly available programming and debugging datasets collected from open-source repositories and benchmark datasets.
+
+The datasets include:
+
+- Buggy and corrected code samples
+- Competitive programming datasets
+- Open-source GitHub repositories
+- Code debugging benchmarks
+- Python and multi-language error datasets
+
+---
+
 ### Evaluation Metrics
 
 - Accuracy
