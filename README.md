@@ -220,7 +220,7 @@ Most existing AI-assisted debugging systems generate automatic fixes but fail to
 - affected code lines
 - how the generated fix solves the problem
 
-This reduces debugging transparency, learning support, and trust in AI-generated solutions.
+This reduces transparency in debugging, learning support, and trust in AI-generated solutions.
 
 ---
 
@@ -262,7 +262,7 @@ The proposed system, **Code Generation and Debugging Assistant **, combines Larg
 
 ## 6.1 System Overview
 
-The system allows users to upload or write code, analyze errors, detect bugs, generate fixes, validate patches, and provide debugging explanations interactively.
+The system allows users to upload or write code, analyse errors, detect bugs, generate fixes, validate patches, and provide interactive debugging explanations.
 
 ## 6.2 Key Features
 
