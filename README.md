@@ -209,6 +209,45 @@ Most systems generate incorrect or hallucinated fixes without proper validation.
 
 ---
 
+# Enhancement Suggestion: Explainable Debugging Module
+
+## Problem in Existing Systems
+
+Most existing AI-assisted debugging systems generate automatic fixes but fail to explain:
+
+- why the bug occurred
+- root cause of the issue
+- affected code lines
+- how the generated fix solves the problem
+
+This reduces debugging transparency, learning support, and trust in AI-generated solutions.
+
+---
+
+## Proposed Enhancement
+
+The proposed system introduces an **Explainable Debugging Module** that provides detailed debugging explanations along with generated fixes.
+
+The module includes:
+
+- Root cause analysis
+- Affected code line detection
+- Beginner-friendly explanations
+- Fix explanation generation
+- Confidence score for AI-generated fixes
+
+---
+
+## Benefits
+
+- Improves user understanding
+- Enhances debugging transparency
+- Helps beginners learn programming concepts
+- Reduces blind dependency on AI-generated fixes
+- Makes the system more educational and research-oriented
+
+---
+
 # 5. Problem Statement
 
 Traditional debugging methods require significant manual effort and are often ineffective in detecting semantic, logical, and multi-file errors. Although AI-assisted debugging systems using Large Language Models (LLMs) can generate automated fixes, they still suffer from limitations such as hallucinated solutions, weak semantic understanding, a lack of explainability, and poor debugging guidance for beginners.
