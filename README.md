@@ -210,7 +210,7 @@ Most systems generate incorrect or hallucinated fixes without proper validation.
 
 # 5. Problem Statement
 
-Traditional debugging methods require significant manual effort and are often ineffective in detecting semantic, logical, and multi-file errors. Although AI-assisted debugging systems using Large Language Models (LLMs) can generate automated fixes, they still suffer from limitations such as hallucinated solutions, weak semantic understanding, lack of explainability, and poor debugging guidance for beginners.
+Traditional debugging methods require significant manual effort and are often ineffective in detecting semantic, logical, and multi-file errors. Although AI-assisted debugging systems using Large Language Models (LLMs) can generate automated fixes, they still suffer from limitations such as hallucinated solutions, weak semantic understanding, a lack of explainability, and poor debugging guidance for beginners.
 
 Therefore, there is a need for an intelligent AI-powered debugging system that combines fault localization, semantic analysis, explainable AI, and automated patch validation to improve debugging accuracy, reliability, and learning support.
 
@@ -252,7 +252,7 @@ The system allows users to upload or write code, analyze errors, detect bugs, ge
 3. Fault localization identifies suspicious code lines
 4. LLMs generate debugging suggestions and fixes
 5. Automated testing validates generated patches
-6. Explainable AI module provides debugging explanations
+6. The explainable AI module provides debugging explanations
 
 ## 7.2 System Architecture
 
@@ -260,12 +260,12 @@ User Input → Code Analyzer → Deep Learning Model → LLM Processing → Bug 
 
 ## 7.3 Data Flow
 
-1. User provides the input source code to the system.  
-2. Code analysis module examines the syntax, structure, and logic of the program.  
-3. Fault localization module identifies possible errors in the code.  
-4. AI debugging module uses Deep Learning and LLMs to detect and fix bugs.  
+1. The user provides the input source code to the system.  
+2. The code analysis module examines the syntax, structure, and logic of the program.  
+3. The fault localisation module identifies possible errors in the code.  
+4. The AI debugging module uses Deep Learning and LLMs to detect and fix bugs.  
 5. Validation module checks the accuracy and executability of generated fixes.  
-6. Explanation module generates clear descriptions of detected errors and solutions.  
+6. The explanation module generates clear descriptions of detected errors and solutions.  
 7. Final debugging suggestions and corrected code are displayed to the user.  
 
 
