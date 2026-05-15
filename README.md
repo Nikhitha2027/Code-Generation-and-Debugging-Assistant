@@ -192,7 +192,6 @@ This paper evaluates the debugging capabilities of open-source Large Language Mo
 | Fault Localization | No | Yes | Partial |
 | Multi-file Debugging | No | No | No |
 | Main Limitation | No explainability | Limited language support | No practical implementation | 
-[1][2][3]
 
 ---
 
