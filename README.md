@@ -359,6 +359,7 @@ User Input → Code Analyzer → Deep Learning Model → LLM Processing → Bug 
 # 9. Experimental Setup
 
 The system is tested using different buggy code samples and datasets collected from programming repositories.[3]
+
 Training and testing are performed using AI models and automated validation techniques.
 
 ## Datasets Used
