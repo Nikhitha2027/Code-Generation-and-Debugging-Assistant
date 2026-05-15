@@ -61,17 +61,17 @@ AI-assisted debugging systems can now detect errors, suggest fixes, explain bugs
 
 Although AI-assisted debugging systems provide promising results, they still face several limitations including:
 
-- Incorrect AI-generated fixes
-- Weak understanding of program logic
-- Lack of explainable debugging
-- Poor multi-file debugging support
-- Limited learning support for beginners
+- Incorrect AI-generated fixes [1][3]
+- Weak understanding of program logic [3]
+- Lack of explainable debugging [1][3]
+- Poor multi-file debugging support [2][3]
+- Limited learning support for beginners [3]
 
-These limitations reduce the reliability and effectiveness of current AI debugging systems. [1][2][3]
+These limitations reduce the reliability and effectiveness of current AI debugging systems. 
 
 ## 1.3 Need for the Study
 
-There is a growing need for intelligent debugging systems that can improve debugging accuracy, reduce developer effort, and provide interactive learning support. Existing systems are unable to fully understand semantic relationships between files and often fail to explain generated fixes clearly.
+There is a growing need for intelligent debugging systems that can improve debugging accuracy, reduce developer effort, and provide interactive learning support. Existing systems are unable to fully understand semantic relationships between files and often fail to explain generated fixes clearly. [1][3]
 
 This research aims to address these issues by proposing a smarter and more explainable AI-assisted debugging framework.
 
@@ -190,7 +190,8 @@ This paper evaluates the debugging capabilities of open-source Large Language Mo
 | Explainable Debugging | No | Yes | Limited |
 | Fault Localization | No | Yes | Partial |
 | Multi-file Debugging | No | No | No |
-| Main Limitation | No explainability | Limited language support | No practical implementation | [1][2][3]
+| Main Limitation | No explainability | Limited language support | No practical implementation | 
+[1][2][3]
 
 ---
 
@@ -245,7 +246,7 @@ The module includes:
 - Enhances debugging transparency
 - Helps beginners learn programming concepts
 - Reduces blind dependency on AI-generated fixes
-- Makes the system more educational and research-oriented [1][2][3] 
+- Makes the system more educational and research-oriented 
 
 ---
 
@@ -259,7 +260,7 @@ Therefore, there is a need for an intelligent AI-powered debugging system that c
 
 # 6. Proposed Solution
 
-The proposed system, **Code Generation and Debugging Assistant **, combines Large Language Models, fault localization, semantic analysis, and automated testing to improve debugging accuracy and developer support. [1][2][3]
+The proposed system, **Code Generation and Debugging Assistant **, combines Large Language Models, fault localization, semantic analysis, and automated testing to improve debugging accuracy and developer support. 
 
 ## 6.1 System Overview
 
@@ -435,9 +436,9 @@ Future improvements may include:
 
 # 14. Conclusion
 
-This paper presented a comparative study of three AI-assisted debugging research papers and analyzed their strengths and limitations. Existing systems face challenges such as incorrect AI-generated fixes, lack of explainability, and weak semantic understanding.
+This paper presented a comparative study of three AI-assisted debugging research papers and analyzed their strengths and limitations. Existing systems face challenges such as incorrect AI-generated fixes, lack of explainability, and weak semantic understanding. [1][3]
 
-To overcome these issues, the proposed Code Generation and Debugging Assistant combines Large Language Models, fault localization, semantic analysis, automated testing, and explainable AI. The proposed framework aims to improve debugging efficiency, reduce developer effort, and provide a smarter and more user-friendly debugging experience. [1][2][3]
+To overcome these issues, the proposed Code Generation and Debugging Assistant combines Large Language Models, fault localization, semantic analysis, automated testing, and explainable AI. The proposed framework aims to improve debugging efficiency, reduce developer effort, and provide a smarter and more user-friendly debugging experience. [2]
 
 ---
 
