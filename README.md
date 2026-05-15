@@ -30,7 +30,7 @@ Institution Name   : Dr. Ambedkar Institute of Technology.
 
 # Abstract
 
-Debugging is one of the most difficult and time-consuming tasks in software development. Traditional debugging methods require a lot of manual effort and are not effective in handling logical and semantic errors in large software systems. Recent developments in Artificial Intelligence (AI) and Large Language Models (LLMs) have introduced intelligent debugging systems that can automatically repair code, detect faults, and provide interactive debugging support. However, existing AI-assisted debugging systems still have limitations such as incorrect AI-generated fixes, weak semantic understanding, lack of explainability, and poor multi-file debugging support.[1][2][3]
+Debugging is one of the most difficult and time-consuming tasks in software development. Traditional debugging methods require a lot of manual effort and are not effective in handling logical and semantic errors in large software systems. Recent developments in Artificial Intelligence (AI) and Large Language Models (LLMs) have introduced intelligent debugging systems that can automatically repair code, detect faults, and provide interactive debugging support. However, existing AI-assisted debugging systems still have limitations such as incorrect AI-generated fixes, weak semantic understanding, lack of explainability, and poor multi-file debugging support. [1][2][3]
 
 This research paper presents a comparative study of three recent papers related to AI-assisted debugging systems:
 
