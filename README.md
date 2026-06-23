@@ -1,9 +1,12 @@
-<p align="center">
-  <img src="https://www.erafoundationindia.org/images/logo.svg" width="220"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" width="220"/>
-</p>
+<div align="center">
 
+<img src="https://drait.edu.in/assets/images/full_logo-wide.png" height="80" style="background:white; padding:8px; margin:0 16px;" />
+<img src="https://www.erafoundationindia.org/images/logo.svg" height="80" style="background:white; padding:8px; margin:0 16px;" />
+<img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" height="80" style="background:white; padding:8px; margin:0 16px;" />
+
+</div>
+
+---
 
 ## Code Generation and Debugging Assistant
 
