@@ -236,7 +236,6 @@ I would like to express my sincere gratitude to the Department of MCA, Dr. Ambed
 
 
 [1] [AI-Assisted Debugging: The Future of Automated Code Fixing](https://www.ijarsct.co.in/Paper30420.pdf)
-# Project Features
 
 [2] [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://arxiv.org/abs/2509.21067)
 
