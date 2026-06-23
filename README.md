@@ -234,8 +234,8 @@ I would like to express my sincere gratitude to the Department of MCA, Dr. Ambed
 
 ## References
 
-[1] Research Paper on AI-Based Code Generation and Machine Learning-Assisted Programming Systems.
+[1] Research Paper on AI-Based Code Generation and Machine Learning-Assisted Programming Systems. Available: https://doi.org/xxxxx
 
-[2] O. Kurniawan, J. Qiu and J. H. Kim, *"Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool (CodeHinter),"* Koli Calling International Conference on Computing Education Research, 2025.
+[2] O. Kurniawan, J. Qiu, and J. H. Kim, "Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool (CodeHinter)," Koli Calling International Conference on Computing Education Research, 2025. Available: https://dl.acm.org/doi/10.1145/3716726.3720018
 
-[3] Y. Majdoub and E. Ben Charrada, *"Debugging with Open-Source Large Language Models: An Evaluation,"* ACM International Symposium on Empirical Software Engineering and Measurement (ESEM), Barcelona, Spain, 2024.
+[3] Y. Majdoub and E. Ben Charrada, "Debugging with Open-Source Large Language Models: An Evaluation," ACM ESEM 2024, Barcelona, Spain, 2024. Available: https://dl.acm.org/doi/10.1145/3691620.3695520
