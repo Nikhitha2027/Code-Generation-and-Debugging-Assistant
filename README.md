@@ -155,15 +155,22 @@ The developed platform improves debugging efficiency, reduces manual effort, and
 
 ---
 
-# 10. Future Scope
+## 10. Future Scope
 
-The future scope of the Code Generation and Debugging Assistant includes the integration of more advanced Artificial Intelligence models to improve debugging accuracy and code generation capabilities. Future versions of the system can support a wider range of programming languages and frameworks, enabling broader applicability across software development domains.
+The current system successfully provides AI-powered code debugging assistance using Large Language Models. In the future, the project can be enhanced with the following features:
 
-The platform can be enhanced with real-time Integrated Development Environment (IDE) support, allowing developers to receive debugging suggestions directly while writing code. Advanced fault localization techniques and automated test case generation can also be incorporated to improve software reliability and reduce maintenance effort.
+- Support for additional programming languages such as C++, Java, Go, and Rust.
+- Integration with version control systems like GitHub to analyze repositories directly.
+- Real-time code execution and automated testing within the application.
+- Personalized debugging recommendations based on user coding patterns.
+- Advanced security vulnerability detection and code quality assessment.
+- Offline deployment options using locally hosted language models.
+- Multi-user collaboration features for team-based debugging and code review.
+- Integration with educational platforms to assist students in learning programming concepts.
+- Improved explanation generation with visual flowcharts and debugging workflows.
+- Enhanced AI models to provide more accurate and context-aware debugging suggestions.
 
-Future research has highlighted the potential of Large Language Models in handling increasingly complex debugging scenarios and multi-file software projects [3]. Intelligent debugging assistants can further be improved through personalized guidance, interactive learning features, and adaptive hint generation to support both novice and experienced programmers [2].
-
-Additionally, integrating collaborative debugging environments, security vulnerability detection, and offline AI models can significantly enhance the practicality and scalability of the system. Continued advancements in AI-assisted debugging are expected to further improve software quality, developer productivity, and automated program repair capabilities [1].
+These enhancements can improve the usability, scalability, and effectiveness of the system while providing a more comprehensive debugging experience for developers and students.
 
 ---
 
