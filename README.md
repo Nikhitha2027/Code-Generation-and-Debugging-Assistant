@@ -8,9 +8,9 @@
 # Code Generation And Debugging Assistant
 
 
-## **Nikhitha H S** 
-## **MCA**
-## **1DA24MC033**
+**Nikhitha H S** 
+**MCA**
+**1DA24MC033**
 
 </div>
 
