@@ -56,9 +56,13 @@ Majdoub and Ben Charrada evaluated multiple open-source Large Language Models us
 
 # 3. Problem Statement
 
-Debugging software applications is a resource-intensive and time-consuming task. Existing debugging tools often provide limited support for understanding root causes and generating automated fixes. Developers must manually analyze source code, identify bugs, and implement corrective actions, leading to increased development costs and reduced productivity.
+## Problem Statement
 
-Research indicates that debugging often consumes a major portion of software development activities, creating a need for intelligent systems capable of automating bug detection and repair processes [1][3].
+Finding and fixing errors in software can take a significant amount of time and effort. Developers often have to go through large sections of code to understand what went wrong and how to fix it. While many debugging tools can identify errors, they usually do not provide detailed explanations or suggest complete solutions.
+
+This process becomes even more challenging for students and beginner programmers who may struggle to understand the cause of errors and the best way to resolve them. As projects become larger and more complex, manually debugging code can reduce productivity and slow down development.
+
+To address this issue, there is a need for a system that can automatically analyze code, identify errors, explain the problem in a simple manner, and suggest appropriate fixes. This project aims to provide such a solution by using Artificial Intelligence and Large Language Models to assist users with code generation and debugging tasks.[1][3]
 
 ---
 
@@ -78,41 +82,27 @@ Research indicates that debugging often consumes a major portion of software dev
 
 The proposed methodology draws inspiration from modern AI-assisted debugging systems that combine fault localization, intelligent hint generation, and automated code repair mechanisms. Similar approaches have been shown to improve debugging effectiveness and provide meaningful support to programmers during software maintenance activities [2][3].
 
-### Step 1: Source Code Submission
+## Step 1: User Input
 
-Users upload or paste source code into the system.
+The user enters source code or a programming-related query through the application interface.
 
-### Step 2: Static Code Analysis
+## Step 2: Code Processing
 
-The code is analyzed using static analysis techniques to identify structural and syntax-related issues.
+The submitted code is sent to the backend, where it is processed and prepared for analysis.
 
-### Step 3: Error Detection
+## Step 3: AI Analysis
 
-The system identifies:
+The backend sends the code to the Large Language Model through the Groq API. The AI model analyzes the code, identifies possible errors, and generates explanations and suggestions.
 
-- Syntax Errors
-- Runtime Errors
-- Logical Errors
-- Code Quality Issues
+## Step 4: Response Generation
 
-### Step 4: AI-Based Processing
+The AI-generated debugging suggestions, explanations, and corrected code are returned to the application.
 
-Large Language Models analyze the detected issues and generate:
+## Step 5: Result Display
 
-- Error explanations
-- Root cause analysis
-- Suggested code fixes
-
-### Step 5: Automated Repair
-
-The generated fixes are applied and validated against predefined conditions.
-
-### Step 6: Output Generation
-
-Corrected code and debugging recommendations are presented to the user.
+The results are displayed to the user in an easy-to-understand format, helping them understand and fix the issues in their code.
 
 ---
-# 6. Implementation
 
 ## 6. Implementation
 
