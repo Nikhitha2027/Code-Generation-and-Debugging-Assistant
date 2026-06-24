@@ -5,11 +5,13 @@
 <img src="https://www.erafoundationindia.org/images/logo.svg" height="80" style="background:white; padding:8px; margin:0 16px;" />
 <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" height="80" style="background:white; padding:8px; margin:0 16px;" />
 
-# Code Generation And Debugging Assistant
+# Code Generation and Debugging Assistant
 
+### Department of Master of Computer Applications
+### Dr. Ambedkar Institute of Technology, Bengaluru
 
-**Nikhitha H S** 
-**MCA**
+**Nikhitha H S**  
+**MCA**  
 **1DA24MC033**
 
 </div>
@@ -18,7 +20,7 @@
 
 ## Abstract
 
-Software debugging is one of the most challenging and time-consuming phases of software development. Developers spend a significant portion of their time identifying, analyzing, and fixing defects in source code. Recent advancements in Artificial Intelligence (AI) and Large Language Models (LLMs) have enabled intelligent systems capable of automating debugging tasks and assisting developers in generating effective code fixes. This project presents an AI-Powered Automated Code Debugging and Fixing System that combines static code analysis, error localization, and Large Language Models to automatically detect syntax, runtime, and logical errors in source code. The system provides detailed explanations of identified issues and generates context-aware fixes to improve software quality and developer productivity. The proposed platform demonstrates how AI can reduce debugging effort while improving software reliability and development efficiency.
+Software debugging is one of the most challenging and time-consuming phases of software development. Developers spend a significant portion of their time identifying, analyzing, and fixing defects in source code. Recent advancements in Artificial Intelligence (AI) and Large Language Models (LLMs) have enabled intelligent systems capable of automating debugging tasks and assisting developers in generating effective code fixes. This project presents a Code Generation and Debugging Assistant that combines static code analysis, error localization, and Large Language Models to automatically detect syntax, runtime, and logical errors in source code. The system provides detailed explanations of identified issues and generates context-aware fixes to improve software quality and developer productivity. Previous studies have demonstrated that AI-assisted debugging tools can improve debugging efficiency, automate bug fixing, and support developers in identifying software defects more effectively [1][2][3].
 
 ---
 
@@ -32,7 +34,7 @@ Artificial Intelligence, Automated Debugging, Program Repair, Large Language Mod
 
 Software debugging plays a critical role in the software development lifecycle. As applications become increasingly complex, identifying and resolving defects becomes more difficult and time-consuming. Traditional debugging approaches require developers to manually inspect source code, analyze execution traces, and identify root causes of errors.
 
-Recent developments in Artificial Intelligence have introduced new possibilities for automated debugging. AI-powered systems such as ChatGPT, GitHub Copilot, and RepairLLaMA have demonstrated the ability to understand programming logic, detect bugs, and suggest corrective actions. Research indicates that AI-assisted debugging tools significantly improve debugging speed and developer productivity while maintaining high accuracy levels in bug detection and repair.
+Recent developments in Artificial Intelligence have introduced new possibilities for automated debugging. AI-powered systems such as ChatGPT, GitHub Copilot, RepairLLaMA, and other Large Language Model-based solutions have demonstrated the ability to understand programming logic, detect bugs, and suggest corrective actions [1]. Research on AI-assisted debugging environments has shown improvements in debugging effectiveness, particularly for novice programmers through guided fault localization and intelligent hint generation [2]. Furthermore, evaluations of open-source Large Language Models have demonstrated their capability to repair a substantial percentage of software defects across multiple programming languages [3].
 
 This project proposes an AI-powered debugging platform that leverages modern Large Language Models and static code analysis techniques to automate software debugging. The system analyzes source code, identifies errors, explains issues, and generates optimized fixes that assist developers throughout the debugging process.
 
@@ -42,15 +44,15 @@ This project proposes an AI-powered debugging platform that leverages modern Lar
 
 ## 2.1 AI-Assisted Debugging: The Future of Automated Code Fixing
 
-Khartode et al. (2025) investigated the role of AI systems such as ChatGPT, GitHub Copilot, RepairLLaMA, and GAMMA in automated debugging. Their findings revealed that AI-assisted debugging significantly improves bug detection accuracy and debugging speed while reducing developer effort. The study also highlighted limitations in handling complex semantic and multi-file bugs, indicating the need for human verification.
+Khartode et al. investigated the role of AI systems such as ChatGPT, GitHub Copilot, RepairLLaMA, and GAMMA in automated debugging. Their study concluded that AI-assisted debugging significantly improves bug detection accuracy, debugging speed, and developer productivity while reducing manual effort. The authors also emphasized that human validation remains necessary when handling complex semantic and logical errors [1].
 
 ## 2.2 Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool
 
-Kurniawan et al. (2025) proposed CodeHinter, an intelligent debugging assistant designed for novice programmers. The system combines fault localization techniques with AI-generated hints and interactive guidance to improve debugging skills. Results showed that structured AI assistance enhances debugging effectiveness and reduces reliance on fully automated solutions.
+Kurniawan et al. proposed CodeHinter, an intelligent debugging assistant designed for novice programmers. The system integrates fault localization techniques, AI-generated hints, quizzes, and guided debugging workflows to help users identify and fix software defects. The study demonstrated that structured AI assistance improves debugging effectiveness and supports learning during the debugging process [2].
 
 ## 2.3 Debugging with Open-Source Large Language Models: An Evaluation
 
-Majdoub and Ben Charrada (2024) evaluated multiple open-source Large Language Models using DebugBench, a benchmark containing over 4,000 buggy code samples. Their research demonstrated that advanced open-source models such as DeepSeek-Coder achieved strong debugging performance and successfully repaired a large percentage of software defects.
+Majdoub and Ben Charrada evaluated multiple open-source Large Language Models using the DebugBench benchmark consisting of more than 4,000 buggy code instances. Their results showed that advanced open-source models such as DeepSeek-Coder achieved strong debugging performance and successfully repaired a large percentage of software defects across Python, Java, and C++ programs [3].
 
 ---
 
@@ -58,7 +60,7 @@ Majdoub and Ben Charrada (2024) evaluated multiple open-source Large Language Mo
 
 Debugging software applications is a resource-intensive and time-consuming task. Existing debugging tools often provide limited support for understanding root causes and generating automated fixes. Developers must manually analyze source code, identify bugs, and implement corrective actions, leading to increased development costs and reduced productivity.
 
-There is a growing need for intelligent debugging systems capable of automatically detecting software defects, explaining errors, and generating accurate code fixes. Such systems can improve software quality, reduce debugging effort, and accelerate the software development lifecycle.
+Research indicates that debugging often consumes a major portion of software development activities, creating a need for intelligent systems capable of automating bug detection and repair processes [1][3].
 
 ---
 
@@ -76,7 +78,7 @@ There is a growing need for intelligent debugging systems capable of automatical
 
 # 5. Methodology
 
-The proposed system follows the following workflow:
+The proposed methodology draws inspiration from modern AI-assisted debugging systems that combine fault localization, intelligent hint generation, and automated code repair mechanisms. Similar approaches have been shown to improve debugging effectiveness and provide meaningful support to programmers during software maintenance activities [2][3].
 
 ### Step 1: Source Code Submission
 
@@ -211,7 +213,7 @@ The developed platform successfully performs automated bug detection and repair 
 - Reduced manual debugging effort.
 - Enhanced code quality and maintainability.
 
-The results demonstrate that AI-powered debugging systems can significantly improve software development productivity while reducing debugging complexity.
+The obtained results align with findings reported in recent research, where AI-assisted debugging systems demonstrated improvements in bug detection accuracy, debugging efficiency, and automated program repair performance [1][3].
 
 ---
 
@@ -250,26 +252,26 @@ Future enhancements include:
 
 # 13. Conclusion
 
-The AI-Powered Automated Code Debugging and Fixing System demonstrates the potential of Artificial Intelligence in automating software debugging processes. By combining static code analysis with Large Language Models, the platform effectively identifies software defects, explains root causes, and generates accurate code fixes. The system improves debugging efficiency, enhances software quality, and reduces developer effort. As AI technologies continue to evolve, intelligent debugging assistants are expected to become an integral component of modern software development environments.
+The Code Generation and Debugging Assistant demonstrates the growing potential of Artificial Intelligence in software maintenance and debugging. By combining static code analysis with Large Language Models, the platform effectively identifies software defects, explains root causes, and generates accurate code fixes. Consistent with recent research findings, the integration of AI-assisted debugging techniques can significantly improve debugging efficiency, support developers during software development, and enhance overall code quality [1][2][3].
 
 ---
 
 # References
 
-1. Y. N. Khartode, B. G. Nevge, A. R. Dabre, S. K. Khamkhedkar, and A. S. Dahivelkar, *"AI-Assisted Debugging: The Future of Automated Code Fixing,"* International Journal of Advanced Research in Science, Communication and Technology, Vol. 5, Issue 3, December 2025.
+[1] Y. N. Khartode, B. G. Nevge, A. R. Dabre, S. K. Khamkhedkar, and A. S. Dahivelkar, "AI-Assisted Debugging: The Future of Automated Code Fixing," International Journal of Advanced Research in Science, Communication and Technology, Vol. 5, Issue 3, Dec. 2025.
 
-2. O. Kurniawan, E. Chandra, C. M. Poskitt, Y. Noller, K. T. W. Choo, and C. Jegourel, *"Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool,"* Proceedings of Koli Calling 2025, ACM, 2025.
+[2] O. Kurniawan, E. Chandra, C. M. Poskitt, Y. Noller, K. T. W. Choo, and C. Jegourel, "Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool," Koli Calling '25, ACM, 2025.
 
-3. Y. Majdoub and E. Ben Charrada, *"Debugging with Open-Source Large Language Models: An Evaluation,"* Proceedings of ESEM 2024, ACM, 2024.
+[3] Y. Majdoub and E. Ben Charrada, "Debugging with Open-Source Large Language Models: An Evaluation," Proceedings of ESEM 2024, ACM, 2024.
 
 ---
 
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/your-username/code-generation-debugging-assistant.git
 
-cd your-repository
+cd code-generation-debugging-assistant
 
 npm install
 
