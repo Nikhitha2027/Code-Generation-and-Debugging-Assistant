@@ -5,7 +5,7 @@
 <img src="https://www.erafoundationindia.org/images/logo.svg" height="80" style="background:white; padding:8px; margin:0 16px;" />
 <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" height="80" style="background:white; padding:8px; margin:0 16px;" />
 
-# AI-Powered Automated Code Debugging and Fixing System
+# Code Generation And Debugging Assistant
 
 ### Department of Master of Computer Applications
 ### Dr. Ambedkar Institute of Technology, Bengaluru
