@@ -235,8 +235,15 @@ These enhancements can improve the usability, scalability, and effectiveness of 
 
 ## Acknowledgements
 
-The authors express sincere gratitude to the Department of MCA, Dr. Ambedkar Institute of Technology, Bengaluru, for providing guidance, support, and resources throughout the development of this project.
+We sincerely thank:
 
+- ERA Foundation  
+- ComedKares  
+- Faculty mentors  
+- Institution  
+- Industry experts  
+
+for their continuous support and guidance.
 ---
 
 ## References
