@@ -188,19 +188,25 @@ The system effectively assists users in understanding software defects and gener
 
 # 8. Discussion
 
-The results obtained from the implementation demonstrate the effectiveness of Artificial Intelligence in software debugging and automated program repair. AI-assisted debugging tools have been reported to improve debugging speed and reduce developer effort while maintaining acceptable levels of accuracy [1].
+The implementation of the Code Generation and Debugging Assistant demonstrated how Artificial Intelligence can simplify the process of writing and debugging code. During testing, the system was able to identify common programming errors and provide useful suggestions for resolving them.
 
-Research on intelligent debugging assistants for novice programmers has shown that fault localization and guided debugging significantly improve debugging effectiveness and user learning outcomes [2]. Furthermore, evaluations of Large Language Models have demonstrated their capability to repair a substantial percentage of software defects across multiple programming languages, validating the practical applicability of AI-powered debugging systems [3].
+One of the most beneficial aspects of the project was its ability to explain errors in a clear and understandable manner. This helps users not only fix issues in their code but also learn from their mistakes. The code generation feature further improves productivity by assisting users in creating code based on their requirements.
 
-The findings indicate that integrating Artificial Intelligence into software maintenance workflows can improve productivity, reduce debugging complexity, and support developers during software development activities.
+The performance of the system largely depends on the quality of the input provided by the user. Clear and detailed prompts generally produce more accurate results, while complex coding problems may still require manual verification and refinement.
+
+Overall, the project shows that AI-powered tools can serve as effective assistants for developers and students by reducing debugging effort, improving code quality, and making the software development process more efficient.
 
 ---
 
 # 9. Conclusion
 
-The Code Generation and Debugging Assistant demonstrates the practical application of Artificial Intelligence in automated software debugging and code repair. By combining code analysis techniques with Large Language Models, the system effectively identifies software defects, explains root causes, and generates corrective solutions.
+## Conclusion
 
-The developed platform improves debugging efficiency, reduces manual effort, and enhances software quality. The results are consistent with recent research findings that highlight the effectiveness of AI-assisted debugging systems and Large Language Models in automated program repair and software maintenance activities [1][2][3].
+The Code Generation and Debugging Assistant was successfully developed to help users generate code and identify programming errors more easily. The system provides error explanations, debugging suggestions, and code generation support through Artificial Intelligence.
+
+The project helps reduce the time spent on debugging and makes it easier for users to understand and fix coding issues. It can be useful for students, beginners, and developers who need assistance while programming.
+
+Overall, the project achieved its goal of creating a simple and effective AI-powered tool for code generation and debugging.[1][2][3]
 
 ---
 
