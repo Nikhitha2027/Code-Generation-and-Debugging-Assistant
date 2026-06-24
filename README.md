@@ -112,147 +112,56 @@ The generated fixes are applied and validated against predefined conditions.
 Corrected code and debugging recommendations are presented to the user.
 
 ---
+# 6. Implementation
 
-# 6. System Architecture
+The Code Generation and Debugging Assistant was developed using React.js for the frontend, FastAPI for the backend, Firebase Authentication for user management, and Supabase PostgreSQL for data storage. The system integrates Large Language Models through the Groq API to provide intelligent code generation and debugging assistance.
 
-```text
-+---------------------+
-|     User Input      |
-+----------+----------+
-           |
-           v
-+---------------------+
-| Code Analysis Layer |
-+----------+----------+
-           |
-           v
-+---------------------+
-| Error Detection     |
-+----------+----------+
-           |
-           v
-+---------------------+
-| AI Processing Layer |
-+----------+----------+
-           |
-           v
-+---------------------+
-| Fix Generation      |
-+----------+----------+
-           |
-           v
-+---------------------+
-| Validation Module   |
-+----------+----------+
-           |
-           v
-+---------------------+
-| Corrected Output    |
-+---------------------+
-```
+The implementation begins with source code submission by the user through the web interface. The submitted code undergoes analysis to identify syntax, runtime, and logical errors. The detected issues are processed using AI models to generate debugging recommendations, error explanations, and corrected code suggestions. The generated solutions are then displayed to the user in an interactive format for review and application. Similar AI-assisted debugging systems have demonstrated the ability to automate bug detection and improve software maintenance activities [2][3].
 
 ---
 
-# 7. Technologies Used
+# 7. Results
 
-## Frontend
+The developed system successfully performs automated code generation and debugging across multiple categories of programming errors.
 
-- React.js
-- HTML5
-- CSS3
-- JavaScript
+### Key Results
 
-## Backend
-
-- FastAPI
-- Python
-
-## Database
-
-- Supabase PostgreSQL
-
-## Authentication
-
-- Firebase Authentication
-
-## AI Integration
-
-- Groq API
-- Large Language Models (LLMs)
-
-## Development Tools
-
-- Git
-- GitHub
-- Visual Studio Code
-
----
-
-# 8. Implementation
-
-The frontend was developed using React.js to provide an interactive user interface for code submission and debugging visualization. FastAPI serves as the backend framework responsible for processing requests, communicating with AI services, and managing application logic.
-
-Supabase PostgreSQL stores user information, debugging history, and project metadata, while Firebase Authentication manages user registration and login functionality.
-
-The AI engine communicates with Large Language Models through the Groq API. The system analyzes uploaded code, detects bugs, generates explanations, and suggests optimized code repairs.
-
----
-
-# 9. Results and Discussion
-
-The developed platform successfully performs automated bug detection and repair across multiple categories of programming errors.
-
-### Achievements
-
-- Accurate syntax error detection.
-- Automated bug localization.
-- AI-generated code repair suggestions.
-- Improved debugging efficiency.
-- Reduced manual debugging effort.
+- Successful detection of syntax errors.
+- Identification of runtime and logical errors.
+- Generation of context-aware debugging suggestions.
+- Automated code correction recommendations.
+- Improved debugging efficiency and reduced manual effort.
 - Enhanced code quality and maintainability.
 
-The obtained results align with findings reported in recent research, where AI-assisted debugging systems demonstrated improvements in bug detection accuracy, debugging efficiency, and automated program repair performance [1][3].
+The system effectively assists users in understanding software defects and generating corrective solutions through Artificial Intelligence techniques.
 
 ---
 
-# 10. Advantages
+# 8. Discussion
 
-- Faster bug detection and correction.
-- Reduced development effort.
-- Improved software quality.
-- Detailed error explanations.
-- Scalable and modular architecture.
-- User-friendly interface.
+The results obtained from the implementation demonstrate the effectiveness of Artificial Intelligence in software debugging and automated program repair. AI-assisted debugging tools have been reported to improve debugging speed and reduce developer effort while maintaining acceptable levels of accuracy [1].
 
----
+Research on intelligent debugging assistants for novice programmers has shown that fault localization and guided debugging significantly improve debugging effectiveness and user learning outcomes [2]. Furthermore, evaluations of Large Language Models have demonstrated their capability to repair a substantial percentage of software defects across multiple programming languages, validating the practical applicability of AI-powered debugging systems [3].
 
-# 11. Limitations
-
-- Complex business logic may require manual review.
-- AI-generated fixes may occasionally be inaccurate.
-- Performance depends on model quality.
-- Internet connectivity is required for AI services.
+The findings indicate that integrating Artificial Intelligence into software maintenance workflows can improve productivity, reduce debugging complexity, and support developers during software development activities.
 
 ---
 
-# 12. Future Scope
+# 9. Conclusion
 
-Future enhancements include:
+The Code Generation and Debugging Assistant demonstrates the practical application of Artificial Intelligence in automated software debugging and code repair. By combining code analysis techniques with Large Language Models, the system effectively identifies software defects, explains root causes, and generates corrective solutions.
 
-- Real-time IDE integration.
-- Multi-file project debugging.
-- Security vulnerability detection.
-- Team collaboration features.
-- Offline AI debugging capabilities.
-- Custom fine-tuned models for enterprise environments.
+The developed platform improves debugging efficiency, reduces manual effort, and enhances software quality. The results are consistent with recent research findings that highlight the effectiveness of AI-assisted debugging systems and Large Language Models in automated program repair and software maintenance activities [1][2][3].
 
 ---
 
-# 13. Conclusion
+# References
 
-The Code Generation and Debugging Assistant demonstrates the growing potential of Artificial Intelligence in software maintenance and debugging. By combining static code analysis with Large Language Models, the platform effectively identifies software defects, explains root causes, and generates accurate code fixes. Consistent with recent research findings, the integration of AI-assisted debugging techniques can significantly improve debugging efficiency, support developers during software development, and enhance overall code quality [1][2][3].
+[1] Y. N. Khartode, B. G. Nevge, A. R. Dabre, S. K. Khamkhedkar, and A. S. Dahivelkar, "AI-Assisted Debugging: The Future of Automated Code Fixing," International Journal of Advanced Research in Science, Communication and Technology, Vol. 5, Issue 3, Dec. 2025.
 
----
+[2] O. Kurniawan, E. Chandra, C. M. Poskitt, Y. Noller, K. T. W. Choo, and C. Jegourel, "Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool," Koli Calling '25, ACM, 2025.
+
+[3] Y. Majdoub and E. Ben Charrada, "Debugging with Open-Source Large Language Models: An Evaluation," Proceedings of ESEM 2024, ACM, 2024.
 
 # References
 
