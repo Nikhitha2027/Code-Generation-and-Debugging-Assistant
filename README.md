@@ -114,9 +114,68 @@ Corrected code and debugging recommendations are presented to the user.
 ---
 # 6. Implementation
 
-The Code Generation and Debugging Assistant was developed using React.js for the frontend, FastAPI for the backend, Firebase Authentication for user management, and Supabase PostgreSQL for data storage. The system integrates Large Language Models through the Groq API to provide intelligent code generation and debugging assistance.
+## 6. Implementation
 
-The implementation begins with source code submission by the user through the web interface. The submitted code undergoes analysis to identify syntax, runtime, and logical errors. The detected issues are processed using AI models to generate debugging recommendations, error explanations, and corrected code suggestions. The generated solutions are then displayed to the user in an interactive format for review and application. Similar AI-assisted debugging systems have demonstrated the ability to automate bug detection and improve software maintenance activities [2][3].
+The Code Generation and Debugging Assistant was developed as a full-stack web application that combines a user-friendly interface, a robust backend, a cloud database, and AI-powered code analysis. The system allows users to submit code, receive debugging suggestions, generate code snippets, and manage their coding activities through a single platform.
+
+### 6.1 Frontend
+
+The frontend of the application was developed using React.js to provide an interactive and responsive user experience. The interface was designed to be simple and easy to navigate so that users can focus on coding and debugging tasks without unnecessary complexity.
+
+Key frontend features include:
+
+- User authentication and login interface.
+- Code editor for entering and modifying source code.
+- AI-powered debugging and code generation interface.
+- Error display and explanation panels.
+- Responsive design for different screen sizes.
+- Dashboard for managing user activities and debugging history.
+
+The frontend communicates with the backend through REST APIs to send user requests and display AI-generated responses.
+
+### 6.2 Backend
+
+The backend was developed using FastAPI, which provides high performance and efficient API handling. It acts as the core processing layer of the system and manages communication between the frontend, database, and AI services.
+
+The backend is responsible for:
+
+- Processing user requests.
+- Managing authentication and authorization.
+- Handling code analysis and debugging workflows.
+- Communicating with AI models for code generation and error correction.
+- Storing and retrieving user information from the database.
+- Returning debugging suggestions and generated code to the frontend.
+
+FastAPI was chosen because of its speed, scalability, and support for modern Python-based applications.
+
+### 6.3 Database
+
+Firebase was used to manage user authentication and store application-related data securely. The database helps maintain user information and allows users to access their previous debugging sessions.
+
+The database stores:
+
+- User account details.
+- Authentication information.
+- Debugging history.
+- Generated code records.
+- User activity logs.
+
+Using Firebase simplifies authentication management while providing secure and reliable cloud-based data storage.
+
+### 6.4 AI Integration
+
+Artificial Intelligence forms the core component of the project. The system integrates Large Language Models (LLMs) through the Groq API to provide intelligent code generation and debugging assistance.
+
+The AI module performs the following tasks:
+
+- Identifies syntax, runtime, and logical errors.
+- Generates detailed explanations for detected issues.
+- Suggests possible fixes and improvements.
+- Generates code based on user requirements.
+- Provides context-aware programming assistance.
+- Supports learning by explaining coding concepts in simple language.
+
+The integration of LLMs enables the system to deliver accurate and meaningful debugging support, helping users improve both code quality and programming knowledge.
 
 ---
 
@@ -159,7 +218,7 @@ The developed platform improves debugging efficiency, reduces manual effort, and
 
 The current system successfully provides AI-powered code debugging assistance using Large Language Models. In the future, the project can be enhanced with the following features:
 
-- Support for additional programming languages such as C++, Java, Go, and Rust.
+- Support for additional programming languages such as  Go, and Rust.
 - Integration with version control systems like GitHub to analyze repositories directly.
 - Real-time code execution and automated testing within the application.
 - Personalized debugging recommendations based on user coding patterns.
