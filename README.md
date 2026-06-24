@@ -7,8 +7,6 @@
 
 # Code Generation and Debugging Assistant
 
-### Department of Master of Computer Applications
-### Dr. Ambedkar Institute of Technology, Bengaluru
 
 **Nikhitha H S**  
 **MCA**  
