@@ -120,7 +120,7 @@ The implementation begins with source code submission by the user through the we
 
 ---
 
-# 7. Results
+# 7. Results and Analysis
 
 The developed system successfully performs automated code generation and debugging across multiple categories of programming errors.
 
@@ -155,45 +155,29 @@ The developed platform improves debugging efficiency, reduces manual effort, and
 
 ---
 
-# References
+# 10. Future Scope
 
-[1] Y. N. Khartode, B. G. Nevge, A. R. Dabre, S. K. Khamkhedkar, and A. S. Dahivelkar, "AI-Assisted Debugging: The Future of Automated Code Fixing," International Journal of Advanced Research in Science, Communication and Technology, Vol. 5, Issue 3, Dec. 2025.
+The future scope of the Code Generation and Debugging Assistant includes the integration of more advanced Artificial Intelligence models to improve debugging accuracy and code generation capabilities. Future versions of the system can support a wider range of programming languages and frameworks, enabling broader applicability across software development domains.
 
-[2] O. Kurniawan, E. Chandra, C. M. Poskitt, Y. Noller, K. T. W. Choo, and C. Jegourel, "Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool," Koli Calling '25, ACM, 2025.
+The platform can be enhanced with real-time Integrated Development Environment (IDE) support, allowing developers to receive debugging suggestions directly while writing code. Advanced fault localization techniques and automated test case generation can also be incorporated to improve software reliability and reduce maintenance effort.
 
-[3] Y. Majdoub and E. Ben Charrada, "Debugging with Open-Source Large Language Models: An Evaluation," Proceedings of ESEM 2024, ACM, 2024.
+Future research has highlighted the potential of Large Language Models in handling increasingly complex debugging scenarios and multi-file software projects [3]. Intelligent debugging assistants can further be improved through personalized guidance, interactive learning features, and adaptive hint generation to support both novice and experienced programmers [2].
 
-# References
-
-[1] Y. N. Khartode, B. G. Nevge, A. R. Dabre, S. K. Khamkhedkar, and A. S. Dahivelkar, "AI-Assisted Debugging: The Future of Automated Code Fixing," International Journal of Advanced Research in Science, Communication and Technology, Vol. 5, Issue 3, Dec. 2025.
-
-[2] O. Kurniawan, E. Chandra, C. M. Poskitt, Y. Noller, K. T. W. Choo, and C. Jegourel, "Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool," Koli Calling '25, ACM, 2025.
-
-[3] Y. Majdoub and E. Ben Charrada, "Debugging with Open-Source Large Language Models: An Evaluation," Proceedings of ESEM 2024, ACM, 2024.
+Additionally, integrating collaborative debugging environments, security vulnerability detection, and offline AI models can significantly enhance the practicality and scalability of the system. Continued advancements in AI-assisted debugging are expected to further improve software quality, developer productivity, and automated program repair capabilities [1].
 
 ---
 
-## Installation
-
-```bash
-git clone https://github.com/your-username/code-generation-debugging-assistant.git
-
-cd code-generation-debugging-assistant
-
-npm install
-
-npm run dev
-```
-
----
-
-## License
-
-This project is developed for academic and research purposes.
-
----
-
-## Acknowledgement
+## Acknowledgements
 
 The authors express sincere gratitude to the Department of MCA, Dr. Ambedkar Institute of Technology, Bengaluru, for providing guidance, support, and resources throughout the development of this project.
-````
+
+---
+
+## References
+
+
+[1] [AI-Assisted Debugging: The Future of Automated Code Fixing](https://www.ijarsct.co.in/Paper30420.pdf)
+
+[2] [Designing for Novice Debuggers: A Pilot Study on an AI-Assisted Debugging Tool](https://arxiv.org/abs/2509.21067)
+
+[3] [Debugging with Open-Source Large Language Models: An Evaluation](https://arxiv.org/abs/2409.03031)
