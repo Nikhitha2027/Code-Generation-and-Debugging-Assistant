@@ -24,7 +24,7 @@ Software debugging is one of the most challenging and time-consuming phases of s
 
 ## Keywords
 
-Artificial Intelligence, Automated Debugging, Program Repair, Large Language Models, Software Engineering, Bug Detection, Code Analysis, Machine Learning.
+Artificial Intelligence, Automated Debugging, Large Language Models, Bug Detection, Code Analysis, Machine Learning.
 
 ---
 
