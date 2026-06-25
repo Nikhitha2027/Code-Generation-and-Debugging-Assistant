@@ -60,9 +60,7 @@ Majdoub and Ben Charrada evaluated multiple open-source Large Language Models us
 
 Finding and fixing errors in software can take a significant amount of time and effort. Developers often have to go through large sections of code to understand what went wrong and how to fix it. While many debugging tools can identify errors, they usually do not provide detailed explanations or suggest complete solutions.
 
-This process becomes even more challenging for students and beginner programmers who may struggle to understand the cause of errors and the best way to resolve them. As projects become larger and more complex, manually debugging code can reduce productivity and slow down development.
-
-To address this issue, there is a need for a system that can automatically analyze code, identify errors, explain the problem in a simple manner, and suggest appropriate fixes. This project aims to provide such a solution by using Artificial Intelligence and Large Language Models to assist users with code generation and debugging tasks.[1][3]
+This process becomes even more challenging for students and beginner programmers who may struggle to understand the cause of errors and the best way to resolve them. As projects become larger and more complex, manually debugging code can reduce productivity and slow down development.[1][3]
 
 ---
 
