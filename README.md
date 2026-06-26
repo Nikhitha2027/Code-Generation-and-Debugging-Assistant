@@ -78,27 +78,63 @@ This process becomes even more challenging for students and beginner programmers
 
 # 5. Methodology
 
-The proposed methodology draws inspiration from modern AI-assisted debugging systems that combine fault localization, intelligent hint generation, and automated code repair mechanisms. Similar approaches have been shown to improve debugging effectiveness and provide meaningful support to programmers during software maintenance activities [2][3].
+The proposed AI-powered Code Debugging Assistant follows a modular architecture that integrates a modern web interface, cloud database services, and a Large Language Model (LLM) to provide intelligent debugging assistance. The methodology consists of multiple interconnected phases that transform user-submitted source code into meaningful debugging insights, explanations, and optimized solutions.
 
-## Step 1: User Input
+## 5.1 User Authentication and Session Management
 
-The user enters source code or a programming-related query through the application interface.
+The debugging process begins with user authentication. Users can securely register or log in using Supabase Authentication. The authentication service verifies user credentials and establishes a secure session before granting access to the application. Once authenticated, users can access personalized features such as debugging history, saved sessions, and account-specific data.
 
-## Step 2: Code Processing
+---
 
-The submitted code is sent to the backend, where it is processed and prepared for analysis.
+## 5.2 Code Submission
 
-## Step 3: AI Analysis
+After successful authentication, users submit source code through the debugging interface. The application accepts code snippets from multiple programming languages along with optional debugging instructions or error descriptions. The frontend validates the input and forwards the request to the backend for further processing.
 
-The backend sends the code to the Large Language Model through the Groq API. The AI model analyzes the code, identifies possible errors, and generates explanations and suggestions.
+---
 
-## Step 4: Response Generation
+## 5.3 Data Preprocessing
 
-The AI-generated debugging suggestions, explanations, and corrected code are returned to the application.
+Prior to AI analysis, the submitted code undergoes a preprocessing stage to improve the quality and consistency of the input. This phase performs several operations, including:
 
-## Step 5: Result Display
+- Validation of user input to ensure valid code is provided.
+- Removal of unnecessary whitespace and formatting inconsistencies.
+- Identification of the programming language.
+- Construction of a structured prompt by combining the user's code with debugging instructions and contextual information.
 
-The results are displayed to the user in an easy-to-understand format, helping them understand and fix the issues in their code.
+These preprocessing operations ensure that the Large Language Model receives clean, standardized, and context-rich input, resulting in more accurate debugging responses.
+
+---
+
+## 5.4 AI-Based Code Analysis
+
+The preprocessed request is transmitted to the Groq API, which invokes the Large Language Model for intelligent code analysis. The model performs semantic and contextual analysis rather than relying solely on syntax rules. It evaluates the submitted code by examining its structure, logic, control flow, and coding practices to identify potential issues and improvement opportunities.
+
+During this phase, the model performs:
+
+- Syntax error detection
+- Logical error analysis
+- Runtime issue identification
+- Code optimization analysis
+- Best practice evaluation
+- Overall code quality assessment
+
+---
+
+## 5.5 Intelligent Response Generation
+
+Based on the analysis results, the Large Language Model generates a comprehensive debugging response. The generated output includes identified errors, detailed explanations, corrected source code, optimization suggestions, and programming best practices. Rather than only providing corrected code, the system explains the cause of each issue, enabling users to understand the debugging process and improve their programming knowledge.
+
+---
+
+## 5.6 Data Storage and History Management
+
+Once the debugging response is generated, the application stores both the user's request and the AI-generated response in the Supabase database. Maintaining debugging history enables users to revisit previous debugging sessions, review past solutions, and monitor their learning progress.
+
+---
+
+## 5.7 Result Presentation
+
+The frontend displays the debugging results in a structured and user-friendly interface. The response is organized into separate sections containing detected errors, corrected code, explanations, optimization suggestions, and additional learning guidance. Syntax highlighting and responsive interface design improve readability and provide an enhanced user experience across different devices.
 
 ---
 
