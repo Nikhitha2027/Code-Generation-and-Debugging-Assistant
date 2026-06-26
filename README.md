@@ -30,11 +30,11 @@ Artificial Intelligence, Automated Debugging, Large Language Models, Bug Detecti
 
 # 1. Introduction
 
-Software debugging plays a critical role in the software development lifecycle. As applications become increasingly complex, identifying and resolving defects becomes more difficult and time-consuming. Traditional debugging approaches require developers to manually inspect source code, analyze execution traces, and identify root causes of errors.
+Software debugging is a fundamental activity in the software development lifecycle that involves identifying, analyzing, and correcting defects in source code. As modern software systems become increasingly complex, manually locating and fixing programming errors becomes more difficult, time-consuming, and prone to human error. Developers often spend a significant portion of their development time understanding compiler messages, tracing program execution, and identifying the root causes of software defects.
 
-Recent developments in Artificial Intelligence have introduced new possibilities for automated debugging. AI-powered systems such as ChatGPT, GitHub Copilot, RepairLLaMA, and other Large Language Model-based solutions have demonstrated the ability to understand programming logic, detect bugs, and suggest corrective actions [1]. Research on AI-assisted debugging environments has shown improvements in debugging effectiveness, particularly for novice programmers through guided fault localization and intelligent hint generation [2]. Furthermore, evaluations of open-source Large Language Models have demonstrated their capability to repair a substantial percentage of software defects across multiple programming languages [3].
+Recent advancements in Artificial Intelligence (AI), particularly Large Language Models (LLMs), have transformed the way programming assistance is provided. AI-powered systems such as ChatGPT, GitHub Copilot, RepairLLaMA, and other LLM-based tools have demonstrated the ability to understand programming logic, detect bugs, generate code, explain errors, and recommend appropriate fixes.[1] Research has shown that AI-assisted debugging environments improve debugging effectiveness by providing intelligent fault localization, contextual explanations, and guided debugging support, especially for novice programmers.[2] Furthermore, evaluations of open-source Large Language Models have demonstrated their capability to repair software defects across multiple programming languages with high accuracy.[3]
 
-This project proposes an AI-powered debugging platform that leverages modern Large Language Models and static code analysis techniques to automate software debugging. The system analyzes source code, identifies errors, explains issues, and generates optimized fixes that assist developers throughout the debugging process.
+Motivated by these advancements, this project proposes an AI-Powered Code Generation and Debugging Assistant that combines a React-based frontend, FastAPI backend, Firebase Authentication, Supabase database, and the Groq API to provide intelligent programming assistance. The system allows users to generate code, detect syntax, runtime, and logical errors, receive detailed explanations, obtain optimized code suggestions, and maintain debugging history through a secure cloud-based platform. By leveraging Large Language Models, the proposed system simplifies the debugging process, enhances developer productivity, and supports both students and professional programmers in improving code quality and programming knowledge.
 
 ---
 
@@ -170,17 +170,18 @@ FastAPI was chosen because of its speed, scalability, and support for modern Pyt
 
 ### 6.3 Database
 
-Firebase was used to manage user authentication and store application-related data securely. The database helps maintain user information and allows users to access their previous debugging sessions.
+The application utilizes both **Firebase** and **Supabase** to manage user authentication and data storage. Firebase Authentication provides a secure mechanism for user registration, login, and session management, while Supabase serves as the cloud database for storing application-related data. This architecture ensures secure authentication along with efficient and scalable data management.
 
-The database stores:
+The system stores:
 
-- User account details.
-- Authentication information.
-- Debugging history.
-- Generated code records.
-- User activity logs.
+- User account details and authentication information (Firebase).
+- User profile information (Supabase).
+- Debugging history (Supabase).
+- Generated code records (Supabase).
+- AI-generated debugging responses (Supabase).
+- User activity logs (Supabase).
 
-Using Firebase simplifies authentication management while providing secure and reliable cloud-based data storage.
+By combining Firebase Authentication with Supabase's PostgreSQL-based cloud database, the application provides secure user management, reliable data storage, and efficient retrieval of debugging records and user information.
 
 ### 6.4 AI Integration
 
