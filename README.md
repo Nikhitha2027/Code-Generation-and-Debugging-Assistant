@@ -56,11 +56,7 @@ Majdoub and Ben Charrada evaluated multiple open-source Large Language Models us
 
 # 3. Problem Statement
 
-## Problem Statement
-
-Finding and fixing errors in software can take a significant amount of time and effort. Developers often have to go through large sections of code to understand what went wrong and how to fix it. While many debugging tools can identify errors, they usually do not provide detailed explanations or suggest complete solutions.
-
-This process becomes even more challenging for students and beginner programmers who may struggle to understand the cause of errors and the best way to resolve them. As projects become larger and more complex, manually debugging code can reduce productivity and slow down development.[1][3]
+Software debugging is a critical yet time-consuming phase of the software development lifecycle. Existing debugging tools are effective at detecting syntax errors but often provide limited support for explaining the root cause of errors or suggesting meaningful corrections. As software systems grow in complexity, manually identifying and resolving defects becomes increasingly challenging and reduces developer productivity. Beginner programmers also face difficulties in understanding compiler errors and debugging outputs. These challenges highlight the need for an intelligent debugging system that can analyze source code, generate contextual explanations, suggest optimized corrections, and improve the overall debugging experience.[1][2][3]
 
 ---
 
